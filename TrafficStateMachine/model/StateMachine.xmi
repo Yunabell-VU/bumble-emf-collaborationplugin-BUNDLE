@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trafficStateMachine:StateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:trafficStateMachine="http://www.example.org/trafficStateMachine">
+  <has color="Red"
+      property="stop"/>
+  <has color="Orange"
+      property="wait"/>
+  <has color="Green"
+      property="go"/>
+  <transition
+      to="//@has.2"
+      from="//@has.1"
+      input="stopTimer"/>
+  <transition
+      to="//@has.1"
+      from="//@has.0"
+      input="go"/>
+  <transition
+      to="//@has.1"
+      from="//@has.1"
+      input="startTimer"/>
+  <transition
+      to="//@has.1"
+      from="//@has.2"
+      input="stop"/>
+</trafficStateMachine:StateMachine>

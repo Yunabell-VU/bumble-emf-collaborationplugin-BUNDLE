@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/TrafficStateMachine/src-gen" creationIcons="false"
+    editDirectory="/TrafficStateMachine.edit/src-gen" editorDirectory="/TrafficStateMachine.editor/src-gen"
+    modelPluginID="TrafficStateMachine" modelName="TrafficStateMachine" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>trafficStateMachine.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="TrafficStateMachine" basePackage="trafficStateMachine" disposableProviderFactory="true"
+      ecorePackage="trafficStateMachine.ecore#/">
+    <genClasses ecoreClass="trafficStateMachine.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trafficStateMachine.ecore#//State/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trafficStateMachine.ecore#//State/property"/>
+    </genClasses>
+    <genClasses ecoreClass="trafficStateMachine.ecore#//StateMachine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trafficStateMachine.ecore#//StateMachine/has"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trafficStateMachine.ecore#//StateMachine/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trafficStateMachine.ecore#//StateMachine/transition"/>
+    </genClasses>
+    <genClasses ecoreClass="trafficStateMachine.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference trafficStateMachine.ecore#//Transition/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference trafficStateMachine.ecore#//Transition/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trafficStateMachine.ecore#//Transition/input"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated statemachine -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="nl.vu.cs.bumble.statemachine.presentation.StatemachineModelWizardID"
+            name="%_UI_StatemachineModelWizard_label"
+            class="nl.vu.cs.bumble.statemachine.presentation.StatemachineModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/StatemachineModelFile.gif">
+         <description>%_UI_StatemachineModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated statemachine -->
+      <editor
+            id="nl.vu.cs.bumble.statemachine.presentation.StatemachineEditorID"
+            name="%_UI_StatemachineEditor_label"
+            icon="icons/full/obj16/StatemachineModelFile.gif"
+            extensions="statemachine"
+            class="nl.vu.cs.bumble.statemachine.presentation.StatemachineEditor"
+            contributorClass="nl.vu.cs.bumble.statemachine.presentation.StatemachineActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statemachine:StateMachine xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" 
+xmlns:statemachine="http://nl.vu.cs.bumble/statemachine" 
+xsi:schemaLocation= "http://nl.vu.cs.bumble/statemachine statemachine.ecore" 
+name="server">
+  <input name="stop"/>
+  <input name="wait"/>
+</statemachine:StateMachine>
